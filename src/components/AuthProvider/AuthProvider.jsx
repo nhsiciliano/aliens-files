@@ -9,7 +9,6 @@ const AuthProvider = ({ children }) => {
             {children}
         </SessionProvider>
     )
-    
 }
 
 export default AuthProvider
