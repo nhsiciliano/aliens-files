@@ -22,3 +22,13 @@
     border-radius: 50%;
     position: absolute;
 }
+
+@media screen and (max-width: 480px) {
+    .container {
+        border: 1.5px solid grey;
+    }
+
+    .ball {
+        background-color: black;
+    }
+}

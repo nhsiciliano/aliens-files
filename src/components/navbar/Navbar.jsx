@@ -2,7 +2,7 @@
 
 import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import DarkModeToggle from '../DarkModeToggle/darkModeToggle'
 import styles from './navbar.module.css'
 
@@ -41,6 +41,7 @@ const links = [
 
 const Navbar = () => {
     const session = useSession();
+    const [open, setOpen] = useState(false);
     return (
         <div className={styles.container}>
             <Link href="/" className={styles.logo}>AliensFiles</Link>
@@ -54,6 +55,26 @@ const Navbar = () => {
                 {session.status === "authenticated" && (
                     <button 
                         className={styles.logout}
+                        onClick={signOut}>
+                            Logout
+                    </button>
+                )}
+            </div>
+            <div className={styles.hamburger} onClick={() => setOpen(!open)}>
+                <div className={styles.line} />
+                <div className={styles.line} />
+                <div className={styles.line} />
+            </div>
+            <div className={styles.menu} onClick={() => setOpen(false)} style={{ right: open ? "0px" : "-50vw" }}>
+                {links.map((link) => (
+                    <Link key={link.id} href={link.url} className={styles.hamlink}>
+                        {link.title}
+                    </Link>
+                ))}
+                <DarkModeToggle />
+                {session.status === "authenticated" && (
+                    <button 
+                        className={styles.hamlogout}
                         onClick={signOut}>
                             Logout
                     </button>
