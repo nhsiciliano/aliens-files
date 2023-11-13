@@ -3,7 +3,7 @@
 import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import DarkModeToggle from '../DarkModeToggle/darkModeToggle'
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle'
 import styles from './navbar.module.css'
 
 const links = [
