@@ -43,7 +43,7 @@ const About = () => {
                     <p className={styles.desc}>At Unearthly Enigmas, we are committed to presenting well-researched,
                         fact-based content while respecting the boundaries of skepticism and
                         wonder. Our goal is to inspire open-minded exploration,
-                        foster discussion, and fuel your imagination. Whether you're a
+                        foster discussion, and fuel your imagination. Whether you are a
                         seasoned paranormal enthusiast or a newcomer to the unexplained,
                         join us on this journey as we navigate the uncharted waters of
                         the strange, the mystical, and the unknown.</p>
