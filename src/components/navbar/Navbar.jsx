@@ -71,6 +71,7 @@ const Navbar = () => {
                         {link.title}
                     </Link>
                 ))}
+                <DarkModeToggle />
                 {session.status === "authenticated" && (
                     <button 
                         className={styles.hamlogout}
