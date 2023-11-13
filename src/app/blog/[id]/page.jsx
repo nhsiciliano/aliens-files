@@ -4,7 +4,7 @@ import styles from './page.module.css'
 import { notFound } from 'next/navigation'
 
 async function getData(id) {
-    const res = await fetch(`https://aliens-files-cijzqssuo-nhsiciliano.vercel.app/api/posts/${id}`, {
+    const res = await fetch(`https://aliens-files.vercel.app/api/posts/${id}`, {
         cache: "no-store",
     });
 

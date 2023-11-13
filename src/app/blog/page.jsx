@@ -5,7 +5,7 @@ import React from 'react'
 import styles from './page.module.css'
 
 async function getData() {
-    const res = await fetch("https://aliens-files-cijzqssuo-nhsiciliano.vercel.app/api/posts", {
+    const res = await fetch("https://aliens-files.vercel.app/api/posts", {
         cache: "no-store",
     });
 
