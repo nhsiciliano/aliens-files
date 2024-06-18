@@ -9,7 +9,7 @@ export const metadata = {
 const Layout = ({children}) => {
     return (
         <div>
-            <h1 className={styles.mainTitle}>Our Works</h1>
+            <h1 className='text-[54px] md:text-[92px]'>Our Works</h1>
             {children}
         </div>
     )

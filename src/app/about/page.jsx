@@ -10,8 +10,8 @@ export const metadata = {
 
 const About = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.imgContainer}>
+        <div>
+            <div className='hidden md:block w-full h-[300px] relative'>
                 <Image
                     src="https://images.pexels.com/photos/7527879/pexels-photo-7527879.jpeg"
                     fill={true}
@@ -23,7 +23,7 @@ const About = () => {
                     <h2 className={styles.imgDesc}>Updated information on the latest events and news</h2>
                 </div>
             </div>
-            <div className={styles.textContainer}>
+            <div className='flex flex-col gap-6 md:gap-24 md:flex-row'>
                 <div className={styles.item}>
                     <h1 className={styles.title}>Who Are We?</h1>
                     <p className={styles.desc}>Welcome to Unearthly Enigmas, your trusted source for the latest and most captivating

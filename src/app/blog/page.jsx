@@ -26,8 +26,8 @@ const Blog = async () => {
     return (
         <div className={styles.mainContainer}>
             {data.map((item) => ( 
-                <Link href={`/blog/${item._id}`} className={styles.container} key={item.id}>
-                    <div className={styles.imgContainer}>
+                <Link href={`/blog/${item._id}`} className='flex flex-col items-center mb-3 gap-8 md:flex-row' key={item.id}>
+                    <div className='max-h-[250px] max-w-[320px] overflow-hidden'>
                         <Image
                             src={item.img}
                             alt=""

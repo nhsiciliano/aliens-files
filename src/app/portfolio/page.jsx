@@ -6,7 +6,7 @@ const Portfolio = () => {
     return (
         <div className={styles.container}>
             <h1 className={styles.selectTitle}>Choose a gallery</h1>
-            <div className={styles.items}>
+            <div className='flex flex-col items-center gap-12 md:flex-row'>
                 <Link href="/portfolio/pics" className={styles.item}>
                     <span className={styles.title}>AliensPics</span>
                 </Link>
