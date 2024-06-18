@@ -24,6 +24,7 @@
     width: 200px;
     height: 100px;
     position: Ū;
+    margin-bottom: 50px;
 }
 
 .img {
@@ -31,6 +32,7 @@
 }
 
 .delete {
+    margin-top: 10px;
     cursor: pointer;
     color: red;
 }

@@ -58,22 +58,26 @@ const Dashboard = () => {
 
     if (session.status === "authenticated") {
         return (
-            <div className={styles.container}>
+            <div className='flex flex-col gap-20 md:flex-row'>
                 <div className={styles.posts}>
                     {isLoading
                         ? "loading"
                         : data?.map((post) => (
-                            <div className={styles.post} key={post._id}>
-                                <div className={styles.imgContainer}>
+                            <div className='flex flex-col my-12 justify-center items-center md:flex-row' key={post._id}>
+                                <div className='w-[200px] h-[100px] mb-12 md:mb-1'>
                                     <Image src={post.img} alt="" width={200} height={100} />
                                 </div>
-                                <h2 className={styles.postTitle}>{post.title}</h2>
-                                <span
-                                    className={styles.delete}
-                                    onClick={() => handleDelete(post._id)}
-                                >
-                                    X
-                                </span>
+                                <div>
+                                    <h2 className={styles.postTitle}>{post.title}</h2>
+                                </div>
+                                <div>
+                                    <span
+                                        className={styles.delete}
+                                        onClick={() => handleDelete(post._id)}
+                                    >
+                                        DELETE
+                                    </span>
+                                </div>
                             </div>
                         ))}
                 </div>

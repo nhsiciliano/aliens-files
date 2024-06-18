@@ -10,7 +10,7 @@ export const metadata = {
 
 const Contact = () => {
     return (
-        <div className='p-4'>
+        <div className=''>
             <h1 className='text-[30px] text-center mb-12 md:text-[50px]'>Let is Keep in Touch</h1>
             <div className='flex flex-col items-center gap-24 md:flex-row'>
                 <div className='hidden lg:flex flex-1 h-[500px] relative'>
