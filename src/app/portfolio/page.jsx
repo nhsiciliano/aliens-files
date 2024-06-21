@@ -4,7 +4,7 @@ import styles from './page.module.css'
 
 const Portfolio = () => {
     return (
-        <div className={styles.container}>
+        <div>
             <h1 className={styles.selectTitle}>Choose a gallery</h1>
             <div className='flex flex-col items-center gap-12 md:flex-row'>
                 <Link href="/portfolio/pics" className={styles.item}>
